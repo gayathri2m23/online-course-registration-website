@@ -1,0 +1,845 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+   
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+#techedlogo{
+    width: 95px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.logo{
+    font-size: 2rem;
+    color:darkblue;
+    cursor: pointer;
+    justify-content: start;
+}
+
+/* Global tags*/
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color:rgb(35,35,85);
+}
+span{
+    font-size: 0.9rem;
+    color:#757373;
+}
+h6{
+    font-size: 1.1rem;
+    color:rgb(24,24,49);
+}
+/*navigation*/
+nav{
+    position:fixed;
+    width: 100%;
+    background-color: white;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.15);
+}
+
+nav .navigation{
+    display:flex;
+}
+#times{
+    width:30px;
+    height:30px;
+    display: none;
+}
+#menu{
+    width:30px;
+    height:30px;
+    display: none;
+}
+nav .navigation ul{
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+
+}
+nav .navigation ul li{
+    list-style:none;
+    margin-left:30px ;
+}
+nav .navigation ul li a{
+    text-decoration: none;
+    color:rgb(21,21,100);
+    font-size:16px;
+    font-weight :500;
+    transition:0.3s ease;
+}
+nav .navigation ul li a.active,
+nav .navigation ul li a:hover{
+color:burlywood;
+}
+/*home*/
+#home{
+    background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url("https://usa.bootcampcdn.com/wp-content/uploads/sites/106/2020/08/CDG_blog_post_image_01-850x412.jpg");
+width:100%;
+    height:100vh;
+background-size: cover;
+background-position: center;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding-top: 40px;
+}
+#home h2{
+color:white;
+font-size: 2.2rem;
+letter-spacing: 1px;
+}
+#home p{
+    width:50%;
+    color:white;
+    font-size: 0.9rem;
+    line-height: 25px;
+    }
+#home  .btn{
+    margin-top:30px;
+}
+
+    #home a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+#home a.blue{
+    color:white;
+    background:darkblue ;
+}
+
+#home a.blue:hover{
+    color:darkblue;
+    background:white ;
+    transition:0.3s ease;
+}
+
+#home a.yellow{
+    color:white;
+    background:yellow ;
+}
+
+#home a.yellow:hover{
+    color:darkblue;
+    background:white ;
+    
+    transition:0.3s ease;
+}
+/*features*/
+#cicon{
+    width: 20px;
+}
+#features{
+    padding: 5vw 8vw 0 8vw;
+    text-align: center;
+}
+#features .fea-base{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    grid-gap :1rem;
+    margin-top: 50px;
+}
+#features .certificate{
+    background: wheat;
+    text-align: start;
+}
+
+#features .certificate h3{
+font-size: 1.2rem;
+font-weight: 600;
+
+padding: 13px 0 7px 0;
+}
+#features .certificate p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+#features .project{
+        background: wheat;
+        text-align: start;
+}
+#features .aictec{
+        background: wheat;
+        text-align: start;
+}
+#projicon{
+    width: 30px;
+}
+#aictecicon{
+    width: 30px;
+}
+/*course*/
+#course{
+    padding: 8vw 8vw 8vw 8vw;
+    text-align: center;
+}
+#course .course-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    grid-gap :1rem;
+    margin-top: 50px;
+
+}
+#course .courses{
+    text-align:start;
+    background: whitesmoke;
+    height:100%;
+}
+#course .courses img{
+    width:100%;
+    height:60%;
+    background-size: cover;
+    background-position: center;
+}
+#course .courses .details{
+    padding: 15px 15px 0 15px;
+}
+#course .courses .details i{
+    color:yellow;
+    font-size: 0.9rem;
+}
+.reminder span{
+    font-size: 90px;
+}
+.reminder p{
+    font-size:40px;
+}
+/*registration*/
+#registration{
+    padding:6vw 8vw 8vw 6vw;
+    background-image: linear-gradient(rgba(99,112,168,0.5),rgba(81,91,233,0.5)),url("https://img.freepik.com/premium-photo/online-registration-form-modish-form-filling_31965-54570.jpg");
+    width:100%;
+    height:100%;
+    background-position: center;
+    background-size:cover;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#registration .form {
+    background: white;
+    border-radius: 8px;
+    display:flex;
+    flex-direction: column;
+    padding:40px;
+    box-shadow: 0 8px 32px 0 rgba(31,38,135,0.37);
+}
+#registration .form input{
+    margin:15px 0;
+    padding:15px 10px;
+    border:1px solid rgba(84,40,241);
+    outline:none;
+}
+#registration .form input::placeholder{
+    color:black;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+#registration .form .btn{
+    margin-top: 20px;
+}
+#registration .form a.yellow{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    color:white;
+    background:yellow ;
+}
+
+#registration .form a.yellow:hover{
+    color:darkblue;
+    background:white ;
+    
+    transition:0.3s ease;
+}
+/*footer*/
+footer{
+    padding:8vw;
+    background-color: darkblue;
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+footer h3{
+    color:white;
+    font-weight:900;
+    font-size: x-large;
+    padding-bottom:20px;
+    cursor: pointer;
+}
+footer p{
+    font-size: larger;
+    color:#7b838a;
+}
+.footer-col
+{
+    justify-content: center;
+}
+footer .subscribe{
+    margin-top:20px;
+}
+footer input{
+    width:220px;
+    padding:15px 12px;
+    background:#334F6C;
+    border:none;
+    outline:none;
+    color:#fff;
+}
+footer .subscribe a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+
+footer .subscribe a.yellow{
+    color:white;
+    background:yellow ;
+}
+
+footer .subscribe  a.yellow:hover{
+    color:darkblue;
+    background:white ;
+    
+    transition:0.3s ease;
+}
+footer .copyright{
+    margin-top: 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+/*about*/
+#about-home{
+    background-image: linear-gradient(rgba(9,5,54,0.3),rgba(5,4,46,0.7)),url("https://usa.bootcampcdn.com/wp-content/uploads/sites/106/2020/08/CDG_blog_post_image_01-850x412.jpg");
+width:100%;
+    height:60vh;
+background-size: cover;
+background-position: center;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding-top: 40px;
+}
+#about-home h2{
+  color:white;
+  font-size: 2.2rem;
+  letter-spacing: 1px; 
+}
+#coll{
+    margin-top: 20px;
+    margin-left: 30px;
+    width:80%;
+   
+
+}
+#about-container .about-text{
+    width: 60%;
+   margin-left: 10px;
+}
+#bo{
+    width:40px;
+}
+#about-container{
+    display: flex;
+    align-items: center;
+    padding:8vw 8vw 2vw 8vw;
+}
+#about-container .about-text h2{
+    color:#29303B;
+    padding-bottom:15px;
+}
+#about-container .about-text p{
+    color:grey;
+    font-weight: 300;
+}
+#about-container .about-text .about-fe{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+#about-container .about-text .about-fe img{
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+}
+#idea{
+    width:40px;
+}
+#about-container .about-text .about-fe .fe-text{
+    width:90%;
+}
+#about-container .about-text .about-fe .fe-text h5{
+    font-size: 16px;
+    color:#29303B;
+}
+#trust {
+    text-align: center;
+    padding: 8vw;
+}
+#t2{
+    width: 150px;
+}
+#t1 {
+    width: 250px;
+}
+#trust .trust-img {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pro-links{
+    display: flex;
+    
+    justify-content: center;
+    gap:0.5rem;
+    margin:1rem;
+    cursor: pointer;
+    
+}
+#what{
+    width:60px;
+    height: 60px;
+}
+    
+
+
+#link{
+    width:40px;
+    height: 50px;  
+}
+footer .copyright .pro-links{
+    margin-top: 0px;
+}
+
+ .pro-links img:hover{
+    
+background: darkblue;
+justify-content: space-evenly;
+box-shadow:0px 0px 15px 0px black;
+    cursor:pointer;
+    height: auto;
+}
+/*course-inner*/
+.course{
+    cursor: pointer;
+}
+#course-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding:8vw;
+}
+#course-inner .overview{
+    width:75%;
+}
+   
+
+#course-inner .overview .course-img{
+    width:100%;
+    height:60vh;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+#course-inner .overview .course-head{
+   display:flex;
+   align-items: flex-start;
+   justify-content: space-between;
+}
+#course-inner .overview .course-head .c-name{
+ width:70%;
+}
+#course-inner .overview .course-head .c-name h2{
+   color: #29303B; 
+}
+#course-inner .overview .course-head .c-name p{
+    font-size:15px;
+}
+#course-inner .overview .course-head span{
+    padding:16px 22px;
+    border-radius: 5px;
+    color:darkblue;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: rgba(88,56,252,0.1);
+}
+#course-inner .learn p{
+  font-size: 15px;
+  padding-bottom: 15px;
+}
+#course-inner .tutor{
+   display:flex; 
+}
+#course-inner .tutor img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+ }
+ #course-inner h3{
+padding:35px 0 25px 0;
+color:#29303B;
+ }
+ #course-inner p{
+   
+    color:#646ea8f2;
+}
+#course-inner hr{
+ height:1px;
+ background: rgba(236,226,229,0.5);
+ margin-top: 40px;
+}
+#course-inner .enroll{
+    width:250px;
+    padding: 0 30px 30px 30px;
+    border-radius:11px;
+    box-shadow:0px 20px 40px 0 rgb(11 2 55 / 8%);
+}  
+#course-inner .enroll h3{
+    padding-bottom: 5px;
+} 
+#course-inner .enroll .enroll-btn{
+    padding: 25px 0 20px 0;
+    margin:auto;
+    text-align: center;
+}  
+#course-inner .enroll .enroll-btn a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 13px 45px;
+    border-radius: 5px;
+    font-weight: 600;
+    color:#fff;
+    background: rgb(50,50,136);
+} 
+
+/*contact*/
+#head{
+    width:20px;
+    height: 20px;
+    margin-right: 20px;
+  
+} 
+#ph{
+    width:20px;
+    height: 20px;
+    margin-right: 20px;
+  
+}
+#sup{
+    width:20px;
+    height: 20px;
+    margin-right: 20px;
+    
+}
+#instagram{
+    width:23px;
+    margin-right: 20px;
+}
+#linked{
+    width:25px;
+} 
+#contact{
+    padding: 8vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.follow img{
+    border-radius: 5px;
+    cursor:pointer;
+    
+}
+.follow img:hover{
+    background-color: #334F6C;
+    transition: 0.3s ease;
+   justify-content: space-between;
+}
+#contact .getin{
+width:350px;
+}
+#contact .getin h2{
+    color:#2c234d;
+    font-size:30px;
+    font-weight: 800;
+    line-height: 0.8;
+    margin-bottom: 16px;
+}
+   
+#contact .getin p{
+    color:#686875;
+    line-height: 24px;
+    margin-bottom: 33px;
+    padding-bottom: 25px;
+    border-bottom:1px solid #e5e4ed;
+}
+#contact .getin h3{
+    color:#2c234d;
+    font-size:16px;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+#contact .getin .getin-details div{
+    display:flex;
+   
+}
+#contact .getin .getin-details div p{
+    font-size: 14px;
+    border-bottom: none;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+#contact .form{
+    width:60%;
+    background: whitesmoke;
+    padding:40px;
+    border-radius: 10px;
+}
+#contact .form h4{
+    font-size: 24px;
+    color: #2c234d;
+    line-height: 30px;
+    margin-bottom: 8px;
+}
+#contact .form .form-row{
+   display: flex;
+   justify-content: space-between;
+   width:100%;
+}
+#contact .form .form-row input{
+    width:48%;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    border:none;
+    background: white;
+    color:#7e7c87;
+    outline: none;
+    padding:20px 30px;
+    margin-bottom: 20px;
+}
+#contact .form .form-col input,
+#contact .form .form-col textarea{
+    width:100%;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    border:none;
+    background: white;
+    color:#7e7c87;
+    outline: none;
+    padding:20px 30px;
+    margin-bottom: 20px;
+}
+#contact .form button{
+    font-size:0.9rem;
+    padding: 13px 25px;
+    background: darkblue;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    cursor:pointer;
+    color:white;
+}
+
+
+
+   
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:769px){
+    nav{
+       
+           padding:25px 20px;
+    }
+    nav img{
+        width:130px;
+    }
+    #times{
+        
+        display: none;
+    }
+    #menu{
+       
+        display: initial;
+    }
+    nav .navigation ul{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    #home{
+        padding-top: 0px;
+    }
+    #home p{
+        width:90%;
+    }
+    #features {
+        padding: 8vw 4vw 0 4vw;
+        
+    }
+    #course{
+        padding:8vw 4vw 0 4vw;
+    }
+    #registration{
+        margin-top: 8vw;
+        padding:6vw 4vw 6vw 4vw;
+    }
+    /*about*/
+    #about-container{
+        
+            padding: 8vw 4vw 2vw 4vw;
+        
+    }
+    #about-container .about-img{
+      
+      padding-right: 30px;
+    }
+    #trust .trust-img img{
+        width:50px;
+        height:auto;
+    }
+    /*course inner*/
+    #course-inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding:8vw 4vw;
+    }
+    #course-inner .overview{
+        width:100%;
+    }
+    #course-inner .overview .course-img{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+        border-radius: 12px;
+        margin-bottom: 20px;
+    }
+    #course-inner .enroll{
+        margin-top:25px;
+    }
+    /*contact*/
+    #contact{
+       padding:8vw 4vw; 
+    }
+    #contact .getin{
+        width:250px;
+    }
+}
+@media(max-width:475px){
+    h1{
+        font-size:2rem;
+    }
+    #about-container{
+        flex-direction: column-reverse;
+    }
+    #about-container .about-img{
+        width:100%;
+        padding-right:0px;
+    }
+    #about-container .about-text{
+        width:100%;
+        padding-bottom: 20px;
+    }
+    #course-inner .overview .course-head .c-name{
+        width:50%;
+    }
+    #course-inner .overview .course-head .c-name h2{
+        font-size: 22px;
+    }
+    #course-inner .overview .course-head span{
+        font-size:22px;
+    }
+    #course-inner .enroll{
+        width:100%;
+    }
+    /*contact*/
+    #contact{
+        padding:8vw 4vw;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: flex-start;
+    }
+    #contact .getin{
+      width:100%;
+      margin-bottom: 30px;
+    }
+    #contact .form{
+        width:100%;
+        padding:40px 30px;
+    }
+    #contact .form .form-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width:100%;
+     }
+     #contact .form .form-row input{
+        width:100%;
+     }
+}
+
+
+
+

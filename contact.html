@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>TECHED WEBSITE</title>
+        <link rel="stylesheet" href="style.css"/>
+        
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!----navigaton----->
+        <nav>
+            <div class="logo">TechEd.co</div>
+            <img id="techedlogo" src="images/techedlogo.png" alt="techedlogo">
+            <div class="navigation">
+                <ul>
+                    <img id="times" src="images/times-solid.svg" alt="">
+                    <li><a  href="index.html">HOME</a></li>
+                    <li><a  href="about.html">ABOUT</a></li>
+                    <li><a href="courses.html">COURSES</a></li>
+                    <li><a class="active"href="contact.html">CONTACT</a></li>
+                </ul>
+                <img id="menu" src="images/hamburger-menu.svg" alt=""/>
+            </div> 
+        </nav>
+        
+        <!----Home----->
+        <section id="about-home">
+            <h2>Contact Us</h2>
+           
+        </section>
+        <section id="contact">
+            <div class="getin">
+                <h2>Get in touch</h2>
+                <p>Looking for help?Fill the form and start a new adventure.</p>
+               <div class="getin-details">
+                <h3>Headquarters</h3>
+                <div class="h">
+                    <img id="head" src="images/head.png" alt="">
+                    <p>Hyderabad,India</p>
+                </div>
+                <h3>Phone</h3>
+                <div>
+                    <img id="ph" src="images/phone.png" alt="">
+                    <p>(+91)9847234112 <br> (+91)9087654234</p>
+                </div>
+                <h3>Support</h3>
+                <div>
+                    <img id="sup" src="images/support.png" alt="">
+                    <p>teched@gmail.com <br> tech@gmail.com</p>
+                </div>
+                <h3>Follow Us</h3>
+                <div class="follow">
+                   <img id="instagram" src="images/instagram.jpeg" alt="">
+                    <img id="linked"src="images/linkedin.png" alt="">
+                </div>
+               </div>
+            </div>
+            <div class="form">
+                <h4>Let's Connect</h4><br>
+                <div class="form-row">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                </div>
+                <div class="form-col">
+                    <input type="text" placeholder="Subject">
+                </div>
+                <div class="form-col">
+                    <textarea name="" id="" cols="30" rows="8" placeholder="How can we help?"></textarea>
+                </div>
+                <div class="form-col">
+                    <button>Send message</button>
+                </div>
+            </div>
+        </section>
+       
+            
+       <footer>
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>You can trust us.We only send promo offers,</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email address">
+                <a href="#" class="yellow">SUBSCRIBE</a>          
+            </div>
+            <div class="copyright">
+                <p>Copyright @2024 All rights reserved | This template is made by TechEd.co</p>
+                <div class="pro-links">
+                    <img id="what" src="images/—Pngtree—whatsapp icon whatsapp logo free_5990837.png" alt=""></img>
+                   
+                    <img id="link" src="images/linkedin.png.png" alt=""></img>
+                </div>
+            </div>
+        </div>
+       </footer>
+       <script>
+        $('#menu').click(function(){
+            $('nav .navigation ul').addclass('active')
+
+        });
+        $('#times').click(function(){
+            $('nav .navigation ul').removeClass('active')
+        });
+       </script>
+        </body>
+</html>

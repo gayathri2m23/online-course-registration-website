@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <title>TECHED WEBSITE</title>
+        <link rel="stylesheet" href="style.css"/>
+        
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!----navigaton----->
+        <nav>
+            <div class="logo">TechEd.co</div>
+            <img id="techedlogo" src="images/techedlogo.png" alt="techedlogo">
+            <div class="navigation">
+                <ul>
+                    <img id="times" src="images/times-solid.svg" alt="">
+                    <li><a  href="index.html">HOME</a></li>
+                    <li><a  href="about.html">ABOUT</a></li>
+                    <li><a class="active"href="courses.html">COURSES</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+                <img id="menu" src="images/hamburger-menu.svg" alt=""/>
+            </div> 
+        </nav>
+        
+        <!----Home----->
+        <section id="about-home">
+            <h2>Enroll our popular courses and skill up</h2>
+           
+        </section>
+        <section id="course-inner">
+            <div class ="overview">
+              <img class ="course-img" src="https://www.tutorialrepublic.com/lib/images/javascript-illustration.png" alt=""> 
+              <div class="course-head">
+                <div class="c-name">
+                  <h2>Javascript Beginner Course</h2>  
+                  <p>Modern JavaScript from the beginning-all the way up to JS expert level!</p>
+                </div>
+                <span>FREE</span>
+              </div>
+              <h3>Instructor</h3> 
+              <div class="tutor">
+
+                <img src="images/in.jpg" alt="">
+                <div class="tutor-det">
+                    <h5>Atul Mishra</h5>
+                    <p>Web Developer at Google</p>
+                </div>
+              </div>
+              <hr>
+              <h3>Course Overview</h3>
+              <p>JavaScript , often abbreviated as JS, is a programming language and core technology of the Web, alongside HTML and CSS. 99% of websites use JavaScript on the client side for webpage behavior.[10]
+
+                Web browsers have a dedicated JavaScript engine that executes the client code. These engines are also utilized in some servers and a variety of apps. The most popular runtime system for non-browser usage is Node.js.<br><br>
+                
+                JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard.[11] It has dynamic typing, prototype-based object-orientation, and first-class functions. It is multi-paradigm, supporting event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM).<br></p>
+            <hr>
+            <h3>What you'll learn</h3>
+            <ul>
+                <li>JavaScript from scratch-beginner to advanced</li><br>
+                <li>Everything you need to become a JavaScript expert and apply for JavaScript jobs</li><br>
+                <li>All about variables,functions,objects and arrays</li><br>
+                <li>All core features and concepts you need to know in modern JavaScript development</li><br>
+                <li>Project driven learning</li><br>
+            </ul>
+            </div>
+            <div class="enroll">
+                <h3>This course includes:</h3>
+                <ul>
+                    <li>52 hours video</li><br>
+                    <li>75 articles</li><br>
+                    <li>Downloadable resourses</li><br>
+                    <li>Full lifetime access</li><br>
+                    <li>Assignments</li><br>
+                </ul>
+                <div class="enroll-btn">
+                    <a class="blue" href="#">Enroll Course</a>
+                </div>
+            </div>
+        </section>
+            
+       <footer>
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>You can trust us.We only send promo offers,</p>
+            <div class="subscribe">
+                <input type="text" placeholder="Your Email address">
+                <a href="#" class="yellow">SUBSCRIBE</a>          
+            </div>
+            <div class="copyright">
+                <p>Copyright @2024 All rights reserved | This template is made by TechEd.co</p>
+                <div class="pro-links">
+                    <img id="what" src="images/—Pngtree—whatsapp icon whatsapp logo free_5990837.png" alt=""></img>
+                   
+                    <img id="link" src="images/linkedin.png.png" alt=""></img>
+                </div>
+            </div>
+        </div>
+       </footer>
+       <script>
+        $('#menu').click(function(){
+            $('nav .navigation ul').addclass('active')
+
+        });
+        $('#times').click(function(){
+            $('nav .navigation ul').removeClass('active')
+        });
+       </script>
+        </body>
+</html>
