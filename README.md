@@ -1,1 +1,1 @@
-# online-course-registration-website
+It is a virtual platform for learning courses# online-course-registration-website
